@@ -1,0 +1,181 @@
+html {
+    margin:0; 
+    padding:0; 
+    box-sizing: border-box;
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    border: 1px solid lightgray;
+    margin-bottom: 30px;
+}
+ 
+
+
+.style-logo {
+    text-align: center;
+    display: block;
+    font-size: 40px;
+    background-color: darkcyan; 
+    color: white;
+}
+
+.style-nav ul {
+    list-style-type: none;
+    text-align: center;
+    padding-inline-start: 0;
+
+}
+
+.style-nav ul li {
+    display: inline-block;
+    padding-left: 0;
+}
+
+.style-nav ul li a {
+    text-decoration: none;
+    color: grey;
+    padding: 8px;
+}
+
+.row::before, .row::after {
+    content: "";
+    display: table;
+}
+
+.row::before {
+    clear: both;
+}
+
+.card {
+    width: 20rem;
+    margin: auto;
+}
+
+img {
+    width: 17rem;
+    float: left;
+}
+
+
+.card-text {
+    color: grey;
+}
+
+.pictureone {
+    background-image: url(./assets/world.png);
+    background-size: 100%;
+    padding-top: 150px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    
+}
+
+.picturetwo {
+    background-image: url(./assets/rpg_game.jpg);
+    background-size: 100%;
+    padding-top: 150px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.picturethree {
+    background-image: url(./assets/trivia.png);
+    background-size: 100%;
+    padding-top: 150px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.picturefour {
+    background-image: url(./assets/infowidget.jpg);
+    background-size: 100%;
+    padding-top: 150px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.picturefive {
+    background-image: url(./assets/Rock-Paper-Scissors.jpg);
+    background-size: 100%;
+    padding-top: 150px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+h5 {
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    background-color: darkcyan;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+
+main {
+    margin-bottom: 30px;
+}
+
+.button {
+    background-color: darkcyan;
+}
+
+footer {
+    background-color: grey;
+    padding: 10px;
+    border-top: 4px solid darkcyan;
+    margin-top: auto;
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-size: 10px;
+}
+
+
+
+
+/* Tablet View */
+
+@media (min-width: 768px) {
+    .style-logo {
+        float: left;
+        padding: 10px;
+        margin-left: 30px;
+    }
+
+    .style-nav {
+        float: right;
+        padding: 25px;
+    }
+
+    .card {
+        margin-left: auto;
+        width: 45rem;
+    }
+
+    img {
+        width: 15rem;
+    }
+}
+
+
+/* Desktop View */
+@media (min-width: 980px) {
+    .card {
+        margin-left: 30px;
+        float: left;
+    }
+
+    img {
+        width: 13rem;
+    }
+}
+
